@@ -9,8 +9,8 @@ type Month = Int
 type Day = Int
 type Person = (Year,Month,Day,Sex,Postfix) {- Persons data extracted from ID number -}
 
-persons :: [IDNumber]
-persons = ["850228/7772","846224/7772","846224777","12345->123","850228->6666","123456->>123","880230-8889","9153028478"]
+people :: [IDNumber]
+people = ["850228/7772","846224/7772","846224777","12345->123","850228->6666","123456->>123","880230-8889","9153028478"]
 
 validateFormat :: [IDNumber] -> [Bool] 
 validateFormat [] = []
