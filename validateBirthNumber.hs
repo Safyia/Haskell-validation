@@ -81,13 +81,3 @@ createErrString (y,m,d,s,p) = show y ++ "." ++ show m ++ "." ++ show d ++ take l
 printPeople :: [IDNumber] -> IO ()
 printPeople xs = putStr (concat (map idToPerson xs))
     
-
--- Zistit ci je validateFormat true ak jes
-    -- Year 19 ++ take 2 x
-    -- Month inRange(01..12) tak Sex = Man,ak inRange(51..62) tak Sex = Women
-    -- Month ak je [1,3,5,7,8,10,12] -> Day inRange(1..31)
-          -- ak je 2 -> leap year Day inRange(0..29) inak (0..28)
-          -- else Day inRange (0..30)
-    -- Postfix = areDigits lastFour x == True tak = lastfour 
-          -- ak nie tak postfix = last Three
-          -- 8 a 3
